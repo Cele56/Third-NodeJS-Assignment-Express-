@@ -1,0 +1,27 @@
+GET http://localhost:2002/tasks
+
+###
+
+POST http://localhost:2002/task
+Content-Type: application/json
+
+{
+    "task_name": "Play",
+    "task_des": "to play",
+    "status": "undone"
+}
+
+###
+PUT http://localhost:2002/update/task/3dbc6369-e46b-4eee-8e07-6f999e7a5bff
+Content-Type: application/json
+
+###
+PATCH   http://localhost:2002/change/task/3dbc6369-e46b-4eee-8e07-6f999e7a5bff
+Content-Type: application/json
+
+{
+    "status": "done"
+}
+
+###
+DELETE  http://localhost:2002/delete/task/3dbc6369-e46b-4eee-8e07-6f999e7a5bff
